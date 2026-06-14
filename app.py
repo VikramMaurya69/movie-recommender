@@ -64,8 +64,7 @@ import streamlit as st
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("background-image: url("https://drive.google.com/uc?export=view&id=1mtmDoHbsYtC141xchKFBzzBbcHMZXX30");
-");
+    background-image: url("https://drive.google.com/uc?export=view&id=1mtmDoHbsYtC141xchKFBzzBbcHMZXX30");
     background-size: cover;
     background-position: center;
 }
