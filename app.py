@@ -61,10 +61,11 @@ similarity = pickle.load(open(output, "rb"))
 
 import streamlit as st
 
+# Add a background image or color
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://drive.google.com/uc?export=view&id=1mtmDoHbsYtC141xchKFBzzBbcHMZXX30");
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
     background-size: cover;
     background-position: center;
 }
@@ -77,7 +78,6 @@ page_bg = """
 </style>
 """
 st.markdown(page_bg, unsafe_allow_html=True)
-
 
 
 
