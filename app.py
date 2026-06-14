@@ -36,6 +36,28 @@ def recommend(movie):
     return recommended_movies, recommended_movies_posters
 
 
+import streamlit as st
+import gdown, pickle, os
+
+file_id = "1mbLJK48tcupYmtZuT8kwd8i1I-fnl3y0"
+url = f"https://drive.google.com/uc?id={file_id}"
+output = "similarity.pkl"
+
+# Show progress bar while downloading
+if not os.path.exists(output):
+    st.info("Downloading similarity model... please wait ⏳")
+    progress = st.progress(0)
+    gdown.download(url, output, quiet=False)
+    progress.progress(100)
+    st.success("Download complete ✅")
+
+similarity = pickle.load(open(output, "rb"))
+
+
+
+
+
+
 
 
 movie_dict =pickle.load(open('movie_dict.pkl','rb'))
