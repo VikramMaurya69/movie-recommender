@@ -59,6 +59,43 @@ similarity = pickle.load(open(output, "rb"))
 
 
 
+import streamlit as st
+
+page_bg = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+}
+[data-testid="stHeader"] {
+    background: rgba(0,0,0,0);
+}
+[data-testid="stToolbar"] {
+    right: 2rem;
+}
+</style>
+"""
+st.markdown(page_bg, unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 movie_dict =pickle.load(open('movie_dict.pkl','rb'))
 movies=pd.DataFrame(movie_dict)
